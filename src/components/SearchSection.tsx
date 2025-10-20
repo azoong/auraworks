@@ -39,7 +39,7 @@ export default function SearchSection({ initialReviews }: { initialReviews: Revi
         console.error('Failed to fetch search results:', error);
         setDisplayedReviews([]);
       }
-    }, 500);
+    }, 200);
     return () => clearTimeout(timerId);
   }, [searchInput, initialReviews]);
 
